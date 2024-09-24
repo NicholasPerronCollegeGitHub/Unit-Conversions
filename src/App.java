@@ -45,7 +45,7 @@ public class App {
                     selection.nextLine(); //gets rid of newline character after inputting the back key so that the program does not crash
                     continue;
                 }
-                System.out.print("Please Enter The number of units to convert: ");
+                System.out.print("Please enter The number of units to convert: ");
                 number = selection.nextFloat();
                 numholder = number;
                 switch(select1){
@@ -130,7 +130,7 @@ public class App {
                 select2 = -1;
                 mode    = '!';
                 selection.nextLine();
-                System.out.print("Press Enter to Continue");
+                System.out.print("Press Enter to continue");
                 selection.nextLine();
                 continue;
 
@@ -293,7 +293,7 @@ public class App {
                 select2 = -1;
                 mode    = '!';
                 selection.nextLine();
-                System.out.print("Press Enter to Continue");
+                System.out.print("Press Enter to continue");
                 selection.nextLine();
                 continue;
 
@@ -392,7 +392,7 @@ public class App {
                 select2 = -1;
                 mode    = '!';
                 selection.nextLine();
-                System.out.print("Press Enter to Continue");
+                System.out.print("Press Enter to continue");
                 selection.nextLine();
                 continue;
 
@@ -453,7 +453,7 @@ public class App {
                 select2 = -1;
                 mode    = '!';
                 selection.nextLine();
-                System.out.print("Press Enter to Continue");
+                System.out.print("Press Enter to continue");
                 selection.nextLine();
                 continue;
 
@@ -514,14 +514,14 @@ public class App {
                 select2 = -1;
                 mode    = '!';
                 selection.nextLine();
-                System.out.print("Press Enter to Continue");
+                System.out.print("Press Enter to continue");
                 selection.nextLine();
                 continue;
 
             }
         }
         System.out.println("");
-        System.out.println("Thank You For Using This Unit Converter!");
+        System.out.println("Thank you for using this unit converter!");
         System.out.println("");
         selection.close();
     }
