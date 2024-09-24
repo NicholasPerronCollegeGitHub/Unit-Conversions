@@ -103,6 +103,7 @@ public class App {
                     number = number * 1000;
                     unit2   = "Miligrams";
                     break;
+                    
                     case 2:
 
                     unit2   = "Grams";
@@ -401,9 +402,22 @@ public class App {
                 while(select1 == -1){
                     System.out.println("Please enter a number to select the first unit type");
                     System.out.println("[0]: Back");
+                    System.out.println("[1]: Mililiter");
+                    System.out.println("[2]: Liter");
+                    System.out.println("[3]: Cubic Meter");
+                    System.out.println("[4]: US gallon");
+                    System.out.println("[5]: US quart");
+                    System.out.println("[6]: US pint");
+                    System.out.println("[7]: US cup");
+                    System.out.println("[8]: US fluid ounce");
+                    System.out.println("[9]: Imperial gallon");
+                    System.out.println("[10]: Imperial quart");
+                    System.out.println("[11]: Imperial pint");
+                    System.out.println("[12]: Imperial cup");
+                    System.out.println("[13]: Imperial fluid ounce");
                     select1 = selection.nextInt();
                 }
-                while(select1 >5 || select1 < -1){
+                while(select1 > 13 || select1 < -1){
                     System.out.println("Please enter a valid unit type");
                     select1 = selection.nextInt();
                 }
@@ -420,16 +434,103 @@ public class App {
                 switch(select1){
 
                     case 1:
+
+                    unit1 = "Mililliters";
+                    number = number / 1000;
+                    break;
+
+                    case 2:
+
+                    unit1 = "Liters";
+                    break;
+
+                    case 3:
+
+                    unit1 = "Cubic meters";
+                    number = number * 1000;
+                    break;
+
+                    case 4:
+
+                    unit1 = "US gallons";
+                    number = number * 3.785;
+                    break;
+
+                    case 5:
+
+                    unit1 = "US quarts"; 
+                    number = number / 1.057;
+                    break;
+
+                    case 6:
+
+                    unit1 = "US pints";
+                    number = number / 2.113;
+                    break;
+
+                    case 7:
+
+                    unit1 = "US cups";
+                    number = number / 4.167;
+                    break;
+
+                    case 8:
+
+                    unit1 = "US fluid ounces";
+                    number = number / 33.814;
+                    break;
+
+                    case 9:
+
+                    unit1 = "Imperial gallons";
+                    number = number * 4.546;
+                    break;
+
+                    case 10:
+
+                    unit1 = "Imperial quarts";
+                    number = number * 1.137;
+                    break;
+
+                    case 11:
+
+                    unit1 = "Imperial pints";
+                    number = number / 1.76;
+                    break;
+
+                    case 12:
+
+                    unit1 = "Imperial cups";
+                    number = number / 3.52;
+                    break;
+
+                    case 13:
+
+                    unit1 = "Imperial fluid ounces";
+                    number = number / 35.195;
                     break;
 
                 }
                 while(select2 == -1 || select2 < -1){
                     System.out.println("Please enter a number to select the Second unit type");
                     System.out.println("[0]: Back");
+                    System.out.println("[1]: Mililiter");
+                    System.out.println("[2]: Liter");
+                    System.out.println("[3]: Cubic Meter");
+                    System.out.println("[4]: US gallon");
+                    System.out.println("[5]: US quart");
+                    System.out.println("[6]: US pint");
+                    System.out.println("[7]: US cup");
+                    System.out.println("[8]: US fluid ounce");
+                    System.out.println("[9]: Imperial gallon");
+                    System.out.println("[10]: Imperial quart");
+                    System.out.println("[11]: Imperial pint");
+                    System.out.println("[12]: Imperial cup");
+                    System.out.println("[13]: Imperial fluid ounce");
                     
                     select2 = selection.nextInt();
                 }
-                while(select2 >5){
+                while(select2 > 13){
                     System.out.println("Please enter a valid unit type");
                     select2 = selection.nextInt();
                 }
@@ -444,8 +545,82 @@ public class App {
                 switch(select2){
 
                     case 1:
+
+                    unit2 = "Mililliters";
+                    number = number * 1000;
                     break;
 
+                    case 2:
+
+                    unit2 = "Liters";
+                    break;
+
+                    case 3:
+
+                    unit2 = "Cubic meters";
+                    number = number / 1000;
+                    break;
+
+                    case 4:
+
+                    unit2 = "US gallons";
+                    number = number / 3.785;
+                    break;
+
+                    case 5:
+
+                    unit2 = "US quarts"; 
+                    number = number * 1.057;
+                    break;
+
+                    case 6:
+
+                    unit2 = "US pints";
+                    number = number * 2.113;
+                    break;
+
+                    case 7:
+
+                    unit2 = "US cups";
+                    number = number * 4.167;
+                    break;
+
+                    case 8:
+
+                    unit2 = "US fluid ounces";
+                    number = number * 33.814;
+                    break;
+
+                    case 9:
+
+                    unit2 = "Imperial gallons";
+                    number = number / 4.546;
+                    break;
+
+                    case 10:
+
+                    unit2 = "Imperial quarts";
+                    number = number / 1.137;
+                    break;
+
+                    case 11:
+
+                    unit2 = "Imperial pints";
+                    number = number * 1.76;
+                    break;
+
+                    case 12:
+
+                    unit2 = "Imperial cups";
+                    number = number * 3.52;
+                    break;
+
+                    case 13:
+
+                    unit2 = "Imperial fluid ounces";
+                    number = number * 35.195;
+                    break;
+                    
                 }
                 
                 System.out.println("Converting " + numholder + " " + unit1 + " to " + unit2 + " results in " + number + " " + unit2 + ".");
@@ -462,9 +637,13 @@ public class App {
                 while(select1 == -1){
                     System.out.println("Please enter a number to select the first unit type");
                     System.out.println("[0]: Back");
+                    System.out.println("[1]: Miles per hour");
+                    System.out.println("[2]: Feet per second");
+                    System.out.println("[3]: Meters per second");
+                    System.out.println("[4]: Kilometers per hour");
                     select1 = selection.nextInt();
                 }
-                while(select1 >5 || select1 < -1){
+                while(select1 >4 || select1 < -1){
                     System.out.println("Please enter a valid unit type");
                     select1 = selection.nextInt();
                 }
@@ -481,16 +660,40 @@ public class App {
                 switch(select1){
 
                     case 1:
+
+                    unit1 = "Miles per hour";
+                    number = number / 2.237;
+                    break;
+
+                    case 2:
+
+                    unit1 = "Feet per second";
+                    number = number / 3.281;
+                    break;
+
+                    case 3:
+
+                    unit1 = "Meters per second";
+                    break;
+
+                    case 4:
+
+                    unit1 = "Kilometers per hour";
+                    number = number / 3.6;
                     break;
 
                 }
                 while(select2 == -1 || select2 < -1){
                     System.out.println("Please enter a number to select the Second unit type");
                     System.out.println("[0]: Back");
+                    System.out.println("[1]: Miles per hour");
+                    System.out.println("[2]: Feet per second");
+                    System.out.println("[3]: Meters per second");
+                    System.out.println("[4]: Kilometers per hour");
                     
                     select2 = selection.nextInt();
                 }
-                while(select2 >5){
+                while(select2 >4){
                     System.out.println("Please enter a valid unit type");
                     select2 = selection.nextInt();
                 }
@@ -505,6 +708,26 @@ public class App {
                 switch(select2){
 
                     case 1:
+
+                    unit2 = "Miles per hour";
+                    number = number * 2.237;
+                    break;
+
+                    case 2:
+
+                    unit2 = "Feet per second";
+                    number = number * 3.281;
+                    break;
+
+                    case 3:
+
+                    unit2 = "Meters per second";
+                    break;
+
+                    case 4:
+
+                    unit2 = "Kilometers per hour";
+                    number = number * 3.6;
                     break;
 
                 }
